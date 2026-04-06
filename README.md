@@ -1,167 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CODExASHU</title>
+<title>CODExASHU</title>
 
-    <style>
-        body {
-            background: black;
-            color: white;
-            text-align: center;
-            font-family: Arial;
-            margin: 0;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background: black;
-            padding: 15px;
-            font-size: 22px;
-            border-bottom: 1px solid white;
-        }
+<style>
 
-        nav {
-            margin-top: 10px;
-        }
+body {
+    background: black;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+}
 
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            border: 2px solid red;
-            color:red;
-            text-decoration: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    border-bottom: 1px solid red;
+}
 
-        .btn:hover {
-            background: red;
-            color: white;
-        }
+/* NAVBAR */
+nav {
+    text-align: center;
+    padding: 10px;
+}
 
-        section {
-            display: none;
-            padding: 20px;
-        }
+.btn {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 20px;
+    border: 2px solid red;
+    color: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-        #home {
-            display: block;
-        }
+.btn:hover {
+    background: red;
+    color: white;
+}
 
-        .glow {
-            color: red;
-            font-size: 35px;
-            text-shadow: 0 0 10px red, 0 0 20px red;
-        }
+/* SECTION CENTER FIX */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
 
-        .box {
-            border: 1px solid red;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-        }
+section {
+    display: none;
+}
 
-        img {
-            width: 250px;
-            margin-top: 10px;
-            border-radius: 10px;
-        }
+#home {
+    display: block;
+}
 
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            border-top: 1px solid red;
-        }
-    </style>
+.glow {
+    color: red;
+    font-size: 32px;
+    text-shadow: 0 0 10px red, 0 0 20px red;
+}
+
+.box {
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .glow {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-    💻CODExASHU
+💻 CODExASHU
 </header>
 
 <nav>
-    <span class="btn" onclick="showSection('home')">HOME</span>
-    <span class="btn" onclick="showSection('services')">SERVICES</span>
-    <span class="btn" onclick="showSection('about')">ABOUT</span>
-    <span class="btn" onclick="showSection('contact')">CONTACT</span>
-    <span class="btn" onclick="showSection('careers')">STAFF</span>
+<span class="btn" onclick="showSection('home')">HOME</span>
+<span class="btn" onclick="showSection('services')">SERVICES</span>
+<span class="btn" onclick="showSection('about')">ABOUT</span>
+<span class="btn" onclick="showSection('contact')">CONTACT</span>
+<span class="btn" onclick="showSection('careers')">STAFF</span>
 </nav>
 
 <!-- HOME -->
 <section id="home">
-    <h1>Premium developing servicE</h1>
-    <div class="glow">Welcome to codexashu™</div>
-        <div class="box"
-    <p><h1> I Create. I Secure. I Deliver.</h1><p>
-(1) I’m a Professional Web Developer, App Developer, and Ethical Hacker.
-I build modern websites, powerful mobile apps, and secure digital systems that people trust.
-</p><p>
-(2) From idea to execution — I turn concepts into reality with clean design, smooth performance, and strong security.
-</p><p>
-(3) Need a website, app, or security solution? You’re in the right place.
-</p>   </p>
+<div class="container">
+
+<h2>Premium Developing Service</h2>
+<div class="glow">Welcome to codexashu™</div>
+
+<div class="box">
+<h2>I Create. I Secure. I Deliver.</h2>
+
+<p>I’m a Professional Web Developer, App Developer, and Ethical Hacker.</p>
+<p>I build modern websites, powerful mobile apps, and secure systems.</p>
+<p>Need a website, app, or security solution? You're in the right place.</p>
+
+</div>
+
+</div>
 </section>
 
 <!-- SERVICES -->
 <section id="services">
-    <h1>Our Services</h1>
+<div class="container">
 
-        <p onclick="showService('web')"
-         <div class="box"
-         >💻WEB DEVELOPING </p>
-        <p onclick="showService('hack')"
-         <div class="box"
-         >💻APP DEVELOPING </p>
-        <p onclick="showService('data')"
-         <div class="box"
-         >💻ETHICAL HACKING </p>
+<h1>Our Services</h1>
 
-    <!-- Service Details -->
-    <div id="serviceBox" style="display:none;">
-        <h2 id="title"></h2>
-        <img id="image">
-        <p id="desc"></p>
-    </div>
+<div class="box" onclick="showService('web')">💻 WEB DEVELOPING</div>
+<div class="box" onclick="showService('app')">📱 APP DEVELOPING</div>
+<div class="box" onclick="showService('hack')">🔐 ETHICAL HACKING</div>
+
+<div id="serviceBox" style="display:none;">
+    <h2 id="title"></h2>
+    <img id="image">
+    <p id="desc"></p>
+</div>
+
+</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-    <h1>About Us</h1>
-    <div class="box"
-    <p>👉 I build powerful websites, smart mobile apps, and secure systems.
+<div class="container">
 
-I’m a Web Developer, App Developer, and Ethical Hacker who doesn’t just create — I solve real problems. From designing modern websites to developing smooth apps and securing digital platforms, I handle it all.
+<h1>About Me</h1>
 
-If you want your project done right, fast, and secure — you come to me.</p>
+<div class="box">
+<p>I build powerful websites, apps, and secure systems.</p>
+<p>I don’t just create — I solve real problems.</p>
+</div>
+
+</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-      <div class="box"
-    <h1>Contact Us</h1>
-    <p>📞 whatsapp:- 9919667539</p>
-    <p>📧 Email: ashutosh.8887.my@email.com</p>
+<div class="container">
+
+<h1>Contact</h1>
+
+<div class="box">
+<p>📞 WhatsApp: 9919667539</p>
+<p>📧 Email: your@email.com</p>
+</div>
+
+</div>
 </section>
 
 <!-- CAREERS -->
 <section id="careers">
-    <h1>NEED</h1>
-    <div class="box"
-    <p>👉  Staff Need:- If you want to work with us then message us on 
-WhatsApp:- 9919667539</p>
+<div class="container">
+
+<h1>Join Us</h1>
+
+<div class="box">
+<p>If you want to work with us, contact on WhatsApp.</p>
+</div>
+
+</div>
 </section>
 
 <footer>
-    © 2026 CODExASHU
+© 2026 CODExASHU
 </footer>
 
 <script>
-function showSection(id) {
-    let sections = document.querySelectorAll("section");
-    sections.forEach(sec => sec.style.display = "none");
 
+function showSection(id) {
+    document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
     document.getElementById(id).style.display = "block";
 }
 
@@ -169,23 +209,21 @@ function showService(type) {
     document.getElementById("serviceBox").style.display = "block";
 
     if(type === 'web') {
-        title.innerText = "50% OFF";
-        image.src = "WEB.jpg";
-        desc.innerText = "I AM CREATING BEST AND SMOOTH WEBSITE WITH CLEAR AND BEST DESIGN     [START :- $50]";
+        title.innerText = "WEB DEVELOPMENT";
+        desc.innerText = "Professional websites starting from $50";
+    }
+
+    if(type === 'app') {
+        title.innerText = "APP DEVELOPMENT";
+        desc.innerText = "Android apps starting from $99";
     }
 
     if(type === 'hack') {
-        title.innerText = "APP DEVELOPE";
-        image.src = "APP.jpg";
-        desc.innerText = "I AM CREATING BEST AND SMOOTH ANDROID APP AND APK             [START :- $99]";
-    }
-
-    if(type === 'data') {
-        title.innerText = "ethical hacker";
-        image.src = "ETHICAL HACKING.jpg";
-        desc.innerText = "per work charge         [startig :- $99]";
+        title.innerText = "SECURITY SERVICES";
+        desc.innerText = "Ethical hacking & security testing";
     }
 }
+
 </script>
 
 </body>
