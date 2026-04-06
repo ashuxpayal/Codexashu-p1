@@ -5,18 +5,18 @@
 
     <style>
         body {
-            background: WHITE;
-            color: BLACK;
+            background: black;
+            color: white;
             text-align: center;
             font-family: Arial;
             margin: 0;
         }
 
         header {
-            background: WHITE;
+            background: black;
             padding: 15px;
             font-size: 22px;
-            border-bottom: 1px solid BLUE;
+            border-bottom: 1px solid white;
         }
 
         nav {
@@ -27,16 +27,16 @@
             display: inline-block;
             margin: 10px;
             padding: 10px 20px;
-            border: 2px solid BLUE;
-            color: BLUE;
+            border: 2px solid red;
+            color:red;
             text-decoration: none;
             border-radius: 10px;
             cursor: pointer;
         }
 
         .btn:hover {
-            background: BLUE;
-            color: WHITE;
+            background: red;
+            color: white;
         }
 
         section {
@@ -49,13 +49,13 @@
         }
 
         .glow {
-            color: BLUE;
+            color: red;
             font-size: 35px;
-            text-shadow: 0 0 10px BLUE, 0 0 20px BLUE;
+            text-shadow: 0 0 10px red, 0 0 20px red;
         }
 
         .box {
-            border: 1px solid BLUE;
+            border: 1px solid red;
             margin: 20px;
             padding: 20px;
             border-radius: 10px;
@@ -70,7 +70,7 @@
         footer {
             margin-top: 30px;
             padding: 10px;
-            border-top: 1px solid BLUE;
+            border-top: 1px solid red;
         }
     </style>
 </head>
@@ -93,6 +93,7 @@
 <section id="home">
     <h1>Premium developing servicE</h1>
     <div class="glow">Welcome to codexashu™</div>
+        <div class="box"
     <p><h1> I Create. I Secure. I Deliver.</h1><p>
 (1) I’m a Professional Web Developer, App Developer, and Ethical Hacker.
 I build modern websites, powerful mobile apps, and secure digital systems that people trust.
@@ -107,11 +108,15 @@ I build modern websites, powerful mobile apps, and secure digital systems that p
 <section id="services">
     <h1>Our Services</h1>
 
-    <div class="box">
-        <p onclick="showService('web')">💻WEB DEVELOPING </p>
-        <p onclick="showService('hack')">💻APP DEVELOPING </p>
-        <p onclick="showService('data')">💻ETHICAL HACKING </p>
-    </div>
+        <p onclick="showService('web')"
+         <div class="box"
+         >💻WEB DEVELOPING </p>
+        <p onclick="showService('hack')"
+         <div class="box"
+         >💻APP DEVELOPING </p>
+        <p onclick="showService('data')"
+         <div class="box"
+         >💻ETHICAL HACKING </p>
 
     <!-- Service Details -->
     <div id="serviceBox" style="display:none;">
@@ -124,6 +129,7 @@ I build modern websites, powerful mobile apps, and secure digital systems that p
 <!-- ABOUT -->
 <section id="about">
     <h1>About Us</h1>
+    <div class="box"
     <p>👉 I build powerful websites, smart mobile apps, and secure systems.
 
 I’m a Web Developer, App Developer, and Ethical Hacker who doesn’t just create — I solve real problems. From designing modern websites to developing smooth apps and securing digital platforms, I handle it all.
@@ -133,6 +139,7 @@ If you want your project done right, fast, and secure — you come to me.</p>
 
 <!-- CONTACT -->
 <section id="contact">
+      <div class="box"
     <h1>Contact Us</h1>
     <p>📞 whatsapp:- 9919667539</p>
     <p>📧 Email: ashutosh.8887.my@email.com</p>
@@ -141,6 +148,7 @@ If you want your project done right, fast, and secure — you come to me.</p>
 <!-- CAREERS -->
 <section id="careers">
     <h1>NEED</h1>
+    <div class="box"
     <p>👉  Staff Need:- If you want to work with us then message us on 
 WhatsApp:- 9919667539</p>
 </section>
